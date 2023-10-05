@@ -64,6 +64,17 @@
                                 @endif
                             </div>
                         </div>
+
+                        <!-- Google Sign in -->
+                        <div class="row">
+                            <div class="container" style="text-align: center">
+                                <div style="float:left; width: 48%;"><hr/></div>
+                                <div style="float:right; width: 48%;"><hr/></div>
+                                <div>Or</div>
+                              <a  class="btn btn-md btn-google btn-block btn-outline" href="{{ '/auth/redirect'}}"><img src="{{url('/images/googleicon.png')}}"> Continue with Google</a>
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
