@@ -75,7 +75,7 @@
                                 <div style="float:left; width: 48%;"><hr/></div>
                                 <div style="float:right; width: 48%;"><hr/></div>
                                 <div>Or</div>
-                              <a  class="btn btn-md btn-google btn-block btn-outline" href="{{ '/auth/redirect'}}"><img src="{{url('/images/googleicon.png')}}"> Continue with Google</a>
+                              <a  class="btn btn-md btn-google btn-block btn-outline" href="{{ '/auth/redirect'}}"><img style="width:13%" src="{{url('/images/googleicon.png')}}"> Continue with Google</a>
                             </div>
                         </div>
 

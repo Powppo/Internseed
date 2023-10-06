@@ -21,38 +21,38 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md" class="wow animated fadeInDown" data-wow-delay="0s">
+        <nav class="navbar navbar-expand-md">
             <div class="topmenu" id="myTopnav">
-                <img class="" style="float:left; padding-right: 100px; " src="">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     <h1>Logo</h1>
                 </a>
                 
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar navbar-inverse navbar-fixed-top">
                         <ul class="asd">
-                            <a class="" href=""> <h5>Komunitas</h5></a>
-                            <a class="" href=""> <h5>Cari Lowongan</h5></a>
-                            <a class="" href=""> <h5>Cari Pemagang</h5></a>
+                            <li>
+                                <a href="">Komunitas</a>
+                            </li>
+                            <li>
+                                <a href=""> Cari Lowongan</a>
+                            </li>
+                            <li>
+                                <a href="">Cari Pemagang</a>
+                            </li>
                         </ul>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar navbar-inverse navbar-fixed-top ms-auto">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li class="nav-item-1">
-                                    <a class="nav-link" href="{{ route('login') }}"><h4 class="nav-x">Masuk</h4></a>
-                                </li>
+                                <h1><a class="nav-link-1" href="{{ route('login') }}">Masuk</a></h1>
                             @endif
 
                             @if (Route::has('register'))
-                                <li class="nav-item-2">
-                                    <a class="nav-link" href="{{ route('register') }}"><h4 class="nav-x-2">Daftar</h4></a>
-                                </li>
+                                <h1><a class="nav-link-2" href="{{ route('register') }}">Daftar</a></h1>
                             @endif
                         @else
                         <img style=" margin-top: auto; margin-bottom:auto; width: 39.217px; height: 39.217px; margin-right: 24px;" src="images/notification.png" alt="Notification">
