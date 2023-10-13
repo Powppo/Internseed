@@ -47,7 +47,10 @@
     border-radius: 75px;
     box-shadow:#000000;
     z-index: 10;
+    margin-bottom: 40px;
   }
+
+  
   
   .topmenu a {
     color: #FEFEFE;
@@ -74,7 +77,90 @@
   .active {
     margin-right: 10px;
   }
+
+  .card-body {
+  justify-content: flex-end; 
+  margin-left: -180px; 
+  background-color: black; 
+  color: white; 
+  width: 100%; 
+  padding: 40px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+  .row.mb-3 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
   
+  }
+
+  .tt-title {
+    text-align: center; 
+    color: white; 
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "poppins", sans-serif; 
+}
+.tt-description{
+  text-align: center;
+    color: white; 
+    font-size: 19px;  
+    font-family: "poppins", sans-serif; 
+
+}
+
+.col-md-6 label[for="name"] {
+  width: 300px; /* Sesuaikan lebar sesuai dengan kebutuhan Anda */
+}
+
+p a.tt-underline {
+  color: white;
+  text-decoration: underline; 
+  font-family: "poppins", sans-serif; 
+}
+
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 18px;  
+  font-family: "poppins", sans-serif; 
+}
+
+
+.custom-margin {
+  margin-bottom: 30px; 
+}
+.row.mb-0 button {
+  background-color: #FFD55A;
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+  border: none; 
+  border-radius: 5px; 
+  font-size: 20px; 
+  font-weight: bold; 
+  cursor: pointer; 
+}
+.row{
+  color: white; 
+  font-size: 17px; 
+}
+.btn-outline{
+  color: white; 
+  font-size: 20px; 
+  font-weight: bold; 
+}
+.title{
+  font-size: 18px;  
+  font-family: "poppins", sans-serif; 
+}
+ 
   
   /**** Media Queries ***/
   
