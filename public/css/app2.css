@@ -1,9 +1,7 @@
 /** Topmenu Style **/
 
 .asd {
-  margin-left: 57px;
-  color: #FEFEFE;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-size: 20px;
   font-style: normal;
   font-weight: 200px;
@@ -160,7 +158,4 @@ p {
   font-size: 18px;  
   font-family: "poppins", sans-serif; 
 }
- 
-  
-  /**** Media Queries ***/
   

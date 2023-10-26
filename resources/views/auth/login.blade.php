@@ -1,83 +1,52 @@
-php artisan migrate@extends('layouts.app')
-
+@extends('layouts.app')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/f59bcd8580.js"></script>
+<link rel="stylesheet" href="css/auth.css" type="text/css">
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+    <div class="row m-5 no-gutters shadow-lg">
+        <div class="col-md-6 d-none d-md-block">
+            <img src="images/sidelogin.png" class="img-fluid" style="width: 2000px; min-height:100%" alt="sidelogin"/>
+        </div>
+        <div class="col-md-6 bg-black p-4">
+                <div class="logintxt">
+                    <img class="imglogin" src="images/authp.png" alt="-">
+                    <h3 style="font-size: 30px; font-weight:700;">Selamat Datang Kembali!</h3>
+                    <h4 style="font-size: 25px; font-weight:400;">Masuk ke Akun Anda</h4>
+                    <div class="form-style">
+                        <form class="formx" method="POST" action="{{ route('login') }}">
                         @csrf
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
+                            <div>
+                                <label class="labely">Email</label>
+                                <input type="email" placeholder="Masukan Email Anda" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
+                                <label class="labely">Password</label>
+                                <input type="password" placeholder="Masukan Password Anda" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
+                                <button class="btnlogin" type="submit">Masuk</button>
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+
                                     </a>
                                 @endif
+                            <div class="returnx">
+                                Belum Punya Akun? <a style="color: #FFFFFF; text-decoration: none;" href="/register">Daftar</a>
                             </div>
-                        </div>
-
-                        <!-- Continue Google -->
-                        <div class="row">
-                            <div class="container" style="text-align: center">
-                                <div style="float:left; width: 48%;"><hr/></div>
-                                <div style="float:right; width: 48%;"><hr/></div>
-                                <div>Or</div>
-                              <a  class="btn btn-md btn-google btn-block btn-outline" href="{{ '/auth/redirect'}}"><img style="width:13%" src="{{url('/images/googleicon.png')}}"> Continue with Google</a>
-                            </div>
-                        </div>
-                        
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
