@@ -209,6 +209,7 @@ body{
     }
     .form-stylex input{
         border: 1px solid var(--light-color);
+        color: var(--light-color);
         margin-bottom: 14px;
         margin-left: auto;
         margin-right: auto;

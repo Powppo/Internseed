@@ -93,6 +93,7 @@ body{
     .form-style input{
         border: 1px solid var(--light-color);
         margin-bottom: 14px;
+        color: var(--light-color);
         margin-left: auto;
         margin-right: auto;
         width: 100%;
