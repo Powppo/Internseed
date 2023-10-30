@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row m-6 no-gutters shadow-lg">
         <div class="col-md-5 d-none d-md-block">
-            <img src="images/sideregister.png" class="img-fluid" style="min-height:100%" alt="sideregister" />
+            <img src="images/register.png" class="img-fluid" style="min-height:100%" alt="sideregister" />
         </div>
         <div class="col-md-7 bg-black p-4">
             <div class="logintxt">
@@ -72,7 +72,7 @@
                         </a>
                         @endif
                         <div class="returnx">
-                            Sudah Punya Akun? <a style="color: #FFFFFF; text-decoration: none;" href="/login">Masuk</a>
+                            Sudah Punya Akun? <a style="color: #FFFFFF; text-decoration: none;" href="/login">Masuk</a> 
                         </div>
                     </form>
                 </div>

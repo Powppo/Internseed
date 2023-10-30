@@ -9,9 +9,9 @@
 <div class="container">
     <div class="row m-5 no-gutters shadow-lg">
         <div class="col-md-6 d-none d-md-block">
-            <img src="images/sidelogin.png" class="img-fluid" style="width: 2000px; min-height:100%" alt="sidelogin"/>
+            <img src="images/login.png" class="img-fluid" style="width: 2000px; min-height:100%" alt="sidelogin"/>
         </div>
-        <div class="col-md-6 bg-black p-4">
+        <div class="col-md-6 bg-black p-4" >
                 <div class="logintxt">
                     <img class="imglogin" src="images/authp.png" alt="-">
                     <h3 style="font-size: 30px; font-weight:700;">Selamat Datang Kembali!</h3>
