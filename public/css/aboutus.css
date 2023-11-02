@@ -1,0 +1,138 @@
+:root {
+    --light-color: #FFFFFF;
+    --main-color: #FFD55A;
+    --dark-color: #000000;
+    --font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    font-style: normal;
+    line-height: normal;
+}
+
+.text{
+    display: flex;
+    padding: 0px 80px 80px 80px;
+}
+.text p{
+    font-size: 24px;
+    color: var(--dark-color);
+    text-align: left;
+}
+
+.aboutus {
+    width: 210px;
+    padding: 120px 120px 0px 120px;
+}
+
+.aboutus span{
+    width: 180px;
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 6px;
+    border-bottom: 5px solid var(--main-color);
+}
+
+.content h1 {
+    font-size: 64px;
+    padding-left: 80px;
+}
+
+.desc {
+    width: 50%;
+    font-size: 24px;
+}
+
+.timconts{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 25%;
+    background-color: transparent;
+    border: 1px solid var(--dark-color);
+}
+
+.timconts h2 {
+    margin-top: -10px;
+    color: var(--main-color);
+}
+
+.timconts h1 {
+    font-weight: 600;
+}
+
+.icon {
+    padding: 5px;
+}
+
+.icon img{
+    padding: 5px;
+    float: right;
+    width: 12%;
+}
+
+.blank {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0px 0px 0px;
+    width: 70%;
+}
+
+.img {
+    padding-left: 40px;
+    width: 35%;
+    margin-top: -100px;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.timconts2{
+    display: flex;
+    gap: 0rem;
+}
+
+.maps {
+    display: flex;
+    gap: 14px;
+    padding: 40px;
+}
+
+.maps img {
+    width: 57%;
+}
+
+.mapDesc {
+    text-align: left;
+    width: 150%;
+    font-size: 12px;
+}
+
+.mapDesc span {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.mapDesc :nth-child(1){
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.mapDesc :nth-child(2){
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1120px) {
+    .img {
+        display: none;
+    }
+}
+

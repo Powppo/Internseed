@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controller\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/aboutus', [App\Http\Controllers\PageController::class, 'aboutus'])->name('aboutus');
 
 Route::get('/lihat', [App\Http\Controllers\LihatController::class, 'index']);
 

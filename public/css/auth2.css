@@ -45,6 +45,10 @@ input[type=radio]:hover + .optiony {
     transition: 0.3s;
 }
 
+.container{
+  padding-top: 50px;
+}
+
 .imglogin {
     width: 100px;
     height: 100px;

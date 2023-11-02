@@ -12,84 +12,59 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="css/app2.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    
-    @yield('css')
-    <style>
-        body {
-            font-family: 'Lato';
-        }
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
+    @yield('css')
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
 <body id="app-layout">
-        <nav class="navbar navbar-expand-md navbar">
-            <div class="container">
-                <div class="topmenu" id="myTopnav">
-                    <a class="navbar-brand" href="{{ url('/forums') }}">
-                        <h1>Logo</h1>
+    <nav class="navbar" id="myNavbar">
+        <div class="brand">
+            <span>Logo</span>
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a class="linkhover" href="forums">Komunitas</a></li>
+                <li><a class="linkhover" href="#">Cari Lowongan</a></li>
+                <li><a class="linkhover" href="#">Cari Pemagang</a></li>
+            </ul>
+        </div>
+        <div class="navbar-auth">
+            <ul>
+                @guest
+                    @if (Route::has('login'))
+                        <li class="login"><a href="{{ route('login') }}">Masuk</a></li>
+                    @endif
+                    @if (Route::has('register'))
+                        <li class="register"><a href="{{ route('register') }}">Daftar</a></li>
+                    @endif
+                    @else
+                    <a href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
                     </a>
-                    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left Side Of Navbar -->
-                        <ul class="navbar navbar-inverse navbar-fixed-top">
-                            <ul class="asd">
-                                <li>
-                                    <a href="">Komunitas</a>
-                                </li>
-                                <li>
-                                    <a href=""> Cari Lowongan</a>
-                                </li>
-                                <li>
-                                    <a href="">Cari Pemagang</a>
-                                </li>
-                            </ul>
-                        </ul>
-    
-                        <!-- Right Side Of Navbar -->
-                        <ul class="navbar navbar-inverse navbar-fixed-top ms-auto">
-                            <!-- Authentication Links -->
-                            @guest
-                                @if (Route::has('login'))
-                                    <h1><a class="nav-link-1" href="{{ route('login') }}">Masuk</a></h1>
-                                @endif
-    
-                                @if (Route::has('register'))
-                                    <h1><a class="nav-link-2" href="{{ route('register') }}">Daftar</a></h1>
-                                @endif
-                            @else
-                            <img style=" margin-top: auto; margin-bottom:auto; width: 39.217px; height: 39.217px; margin-right: 24px;" src="images/notification.png" alt="Notification">
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        <img style="width: 39.217px; height: 39.217px; margin-right: 103px" src="images/profile.png" alt="Profile">
-                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                        <a href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                         document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-    
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                    </a>
-    
-                                </li>
-                            @endguest
-                        </ul>
-                    </div>
-            </div>
-        </nav>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @endguest
+            </ul>
+        </div>
+        <button aria-label="toggle menu" id="responsiveMenuToggleButton">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="openIcon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>  
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="closeIcon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>    
+        </button>
+    </nav>
         <main class="py-4">
             @yield('content')
             <!-- JavaScripts -->
@@ -97,9 +72,39 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
             <!-- Forum js -->
             @yield('js')
+            <script type="text/javascript" src="js/navbar.js"></script>
         </main>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+<footer>
+    <div class="containerx">
+        <div class="flex-box">
+            <span>Logo
+                <p>Lorem ipsum dolor sit amet consectetur. Leo orci leo leo et ac egestas scelerisque. 
+                    Magna elementum id dictum id. Vestibulum quam tellus purus risus eget.</p>
+            </span>
+            <b class="topMedia">Layanan
+                <a href="aboutus">Tentang Kami </a>
+                <a href="forums">Komunitas </a>
+                <a href="">Cari Lowongan </a>
+                <a href="">Profil </a>
+            </b>
+            <b class="topMedia">Perusahaan
+                <a href="">Profil Perusahaan </a>
+                <a href="">Cari Pemagang</a>
+            </b>
+            <b class="topMedia">Sosial Media
+                <div>
+                    <img src="images/iconInstagram.png" alt="">
+                    <img src="images/iconX.png" alt="">
+                    <img src="images/iconLinkedin2.png" alt="">
+                    <img src="images/iconYoutube.png" alt="">
+                </div>
+            </b>
+        </div>
+        <p>Copyright © 2023 (--). All Rights Reserved </p>
+    </div>
+</footer>
 </html>
 
