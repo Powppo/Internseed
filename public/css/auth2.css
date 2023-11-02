@@ -103,20 +103,36 @@ input[type=radio]:hover + .optiony {
     line-height: normal;
     border-radius: 10px;
   }
-  .btnpost {
+
+ /* KOMUNITAS */
+
+ .p {
+  color: #000000;
+ }
+
+.flex-container {
+  display: flex;
+  margin-top: -15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BUTTON-POST */
+
+   .btnpost {
     background-color: #FFD55A;
     color: white;
     border: none;
-    font-family: 'Poppins', sans-serif;
     border-radius: 3px;
     padding: 15px 60px;
-    margin-left: 30px; 
+    margin-left: 20px; 
     margin-bottom: 280px;
     cursor: pointer;
-  }
-  .flex-container {
-    display: flex;
-    margin-top: 5px;
+    transition: background-color 0.3s;
+     }
+
+/* CARD_POSTINGAN   */
+  .card-container {
+    display: none;  
   }
 
   .card {
@@ -126,67 +142,150 @@ input[type=radio]:hover + .optiony {
     margin-left: 30px; 
   }
 
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  .large-card-container {
+    display: flex;
+    flex-direction: column;   
+    }
+
+  .large-card {
+  width: 680px; 
+  margin-bottom: 10px;
   }
 
-  .dropbtn {
-    background-color: transparent;
-    color: #000;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    padding: 0px;
-    margin-left: 680px;
-    margin-top: 0.10%;
+  .icon-text-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .icon-text-button img {
+    width: 50px; 
+    height: 50px; 
+}
+
+.icon-text-button h4 {
+  margin-right: 10px;
+}
+
+.icon-text-button .dropbtn {
+  margin-left: auto; 
+  background-color: transparent;
+  border:  none;
+  color: #000;
+  cursor: pointer;
+}
+
+.card.large-card p {
+  color: black;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+.dropdown {
+  position: relative;
+    display: flex;
+    margin-right: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFD55A;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text i {
+  font-size: 24px; /* Atur ukuran ikon sesuai keinginan Anda */
+  margin-right: 5px; /* Atur jarak antara ikon dan teks */
+}
+
+.icon-text span {
+  font-size: 16px; /* Atur ukuran teks sesuai keinginan Anda */
+}
+
+.btncomment {
+  display: inline-block; 
+  background-color: #ffffff;
+  border: none;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.modal-title {
+  display: flex;
+}
+
+.modal-title img {
+  width: 50px; 
+  height: 50px; 
+}
+.modal-title h5 {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.card-comment {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
   
-  }
 
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #FFD55A;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-  }
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
 
-  .dropdown-content a {
-    color: #ffffff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
 
-  .dropdown-content a:hover {
-    background-color: #000000;
-    color: #ffffff;
-  }
 
+
+
+
+
+
+
+ /* CARD-REKOMENDASI */
   .small-card {
-    width: 250px; 
+    width: 320px; 
     border-radius: 10px;   
+    max-height: 700px;
   }
 
   .link-underline {
     text-decoration: underline;
   }
   
-  .large-card {
-    width: 750px; 
-    margin-bottom: 120px;
+  .modal-body{
+    color: #B6B6B6;
+    padding: 20px; 
+    border: 1px solid #ffffff; 
   }
-
-
-
-
-
 
   .yellow-paragraph {
     color: #FFD55A;
@@ -196,23 +295,137 @@ input[type=radio]:hover + .optiony {
     border-radius: 5px;
     margin: 0; 
     font-size: medium;
+    margin-bottom: 15px;
   }
+  .yellow-paragraph:hover {
+    text-decoration: underline; 
+}
   
   .gg-arrow-right {
     color: #FFD55A;
   }
+
+  /* PERTOPIK */
+
+  .nested-card {
+    margin-bottom: 40px;
+  }
+
+  .nested-card .content {
+    display: flex;
+   
+}
+
+.nested-card .content .text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  
+}
+
+.nested-card .content img {
+    width: 80px; 
+    height: 80px; 
+    margin-right: 10px; 
+}
+
+.nested-card .content .text-container h5 {
+  margin: 0;
+}
+
+.nested-card .content .text-container p1 {
+  margin: 0;
+}
+
+
+
+  /* BUTTON-LIHAT-IKUTI */
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: 20px;
+  }
+
+  .btnfollow {
+    background-color: transparent;
+    color: #000000; 
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+  }
+
+  .btnview {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid rgb(255, 255, 255); 
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-left: -15px;
+    margin-right: 15px;
+  }
+
+
+  .button-container button:hover {
+    background-color: #FFD55A; 
+    color: white; 
+    border: 2px solid #FFD55A; 
+  }
+
+ 
+
+  textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 20px;
+    height: 280px;
+}
+  
+  textarea:focus {
+    outline: none; 
+  }
+
+  .btn-container {
+    display: flex;
+  }
+
+
+
+
+
+   /* LIHAT*/
+   .content1 {
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Mengatur item secara vertikal */
+}
+
+   .profile-info {
+    display: flex;
+    align-items: center; 
+}
+
+.profile-info img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+
+  
+  
+  
   
 
 
 
 
   
-
-
-
-
-
-
 
 
 .optionx {
@@ -359,3 +572,8 @@ body{
     .sideline:after {
     margin: 0 0 0 20px;
     }
+
+
+   
+
+ 
