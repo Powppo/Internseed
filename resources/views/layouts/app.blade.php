@@ -30,7 +30,7 @@
         </div>
         <div class="navbar-links">
             <ul>
-                <li><a class="linkhover" href="forums">Komunitas</a></li>
+                <li><a class="linkhover" href="/forums">Komunitas</a></li>
                 <li><a class="linkhover" href="#">Cari Lowongan</a></li>
                 <li><a class="linkhover" href="#">Cari Pemagang</a></li>
             </ul>
@@ -96,7 +96,7 @@
             </b>
             <b class="topMedia">Sosial Media
                 <div>
-                    <img src="images/iconInstagram.png" alt="">
+                    <img src="vendor/devdojo/chatter/assets/images/iconInstagram.png" alt="">
                     <img src="images/iconX.png" alt="">
                     <img src="images/iconLinkedin2.png" alt="">
                     <img src="images/iconYoutube.png" alt="">

@@ -175,7 +175,7 @@ return [
 
     'security' => [
         'limit_time_between_posts' => true, //
-        'time_between_posts'       => 1, // In minutes
+        'time_between_posts'       => 0, // In minutes
     ],
 
     /*
@@ -244,7 +244,7 @@ return [
     */
 
     'paginate' => [
-        'num_of_results' => 10,
+        'num_of_results' => 5,
     ],
 
     /*

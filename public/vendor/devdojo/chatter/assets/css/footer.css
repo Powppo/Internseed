@@ -1,0 +1,186 @@
+:root {
+    --light-color: #FFFFFF;
+    --main-color: #FFD55A;
+    --dark-color: #000000;
+    --font: 'Poppins', sans-serif;
+}
+
+.containerx {
+    width: auto;
+    height: 60%;
+    bottom: 0;
+    align-items: center;
+    text-align: center;
+    background-color: var(--dark-color);
+}
+
+.containerx p {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.flex-box {
+    margin-top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
+    padding: 100px 0px 50px 0px;
+    gap: 100px;
+    color: var(--light-color);
+    width: 80%;
+    border-bottom: 2px solid var(--light-color);
+}
+
+.flex-box span p {
+    padding: 80px 0px 40px;
+    width: 400px;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.flex-box span {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.flex-box :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 10px;
+    text-align: left;
+}
+
+.flex-box :nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.flex-box a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.flex-box :nth-child(2) :nth-child(1) {
+    margin-top: 10px;
+}
+
+.flex-box :nth-child(3) :nth-child(1) {
+    margin-top: 10px;
+}
+
+.containerx p {
+    color: var(--main-color);
+}
+
+.flex-box :nth-child(4) div{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 26px;
+}
+
+.flex-box :nth-child(4) div img {
+    width: 30px;
+    height: 30px;
+}
+
+.topMedia { 
+    color: var(--main-color);
+    text-align: left;
+}   
+
+@media screen and (max-width: 1200px){
+    body {
+        font-size: 12px;
+    }
+
+    .flex-box {
+        gap: 20px;
+    }
+
+    .flex-box :nth-child(4) div{
+        gap: 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body {
+        font-size: 10px;
+    }
+
+    .flex-box {
+        gap: 10px;
+    }
+    
+    .flex-box :nth-child(4) div{
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .flex-box :nth-child(4) div img{
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .containerx{
+        width: auto;
+        height: auto;
+    }
+
+    .flex-box {
+        gap: 30px;
+        flex-direction: column;
+        height: 100%;
+    }
+    .flex-box :nth-child(2){
+        text-align: center;
+    }
+    .flex-box :nth-child(3){
+        text-align: center;
+    }
+    .flex-box :nth-child(4){
+        text-align: center;
+    }
+    .flex-box :nth-child(4) div{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flex-box :nth-child(4) div img{
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+    }
+    .flex-box {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .flex-box span p {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .containerx p {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
