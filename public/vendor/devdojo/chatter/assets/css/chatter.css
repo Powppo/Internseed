@@ -84,16 +84,7 @@ body {
 }
 #chatter #new_discussion {
   display: none;
-  border: 2px solid #ffffff;
-  border-bottom: 0px;
-  position: fixed;
-  bottom: 0px;
-  width: 750px;
-  margin-left: -375px;
-  left: 50%;
   height: auto;
-  background: #fff;
-  z-index: 9999;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   overflow: hidden;
@@ -297,6 +288,7 @@ body {
 #chatter ul.discussions li .chatter_posts {
   border: 1px solid #0000004a;
   border-radius: 5px;
+  width: 100%;
   background: #FFFFFF;
   padding: 20px;
   -webkit-transition: background 0.3s ease;
@@ -343,15 +335,12 @@ body {
 }
 #chatter ul.discussions li a.discussion_list .chatter_post_actions p,
 #chatter ul.discussions li .chatter_posts .chatter_post_actions p {
-  margin: 0px;
   float: right;
-  background: #f1fcff;
-  border-radius: 10px;
-  font-size: 12px;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 10px;
   cursor: pointer;
-  padding: 3px 10px;
-  margin-right: 10px;
-  color: #B1BcBf;
+  padding-right: 7px;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
@@ -430,7 +419,7 @@ body {
   color: #9DADB4;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  font-family: Arial, Helvetica, Times, Courier;
+  font-family: 'Poppins', sans-serif;
 }
 #chatter ul.discussions li a.discussion_list .chatter_right .chatter_count i,
 #chatter ul.discussions li .chatter_posts .chatter_right .chatter_count i {

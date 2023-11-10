@@ -1,0 +1,32 @@
+#editDelete .openIcon {
+    display: block;
+}
+#editDelete .closeIcon {
+    display: none;
+}
+#editDelete.open .openIcon {
+    display: none;
+}
+#editDelete.open .closeIcon {
+    display: block;
+}
+#editDelete {
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.option.open{
+    display: block;
+}
+
+.option {
+    display: block;
+    
+}
+
+#editDelete svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--dark-color);
+}
