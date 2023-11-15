@@ -26,6 +26,12 @@
 <body id="app-layout">
     <nav class="navbar" id="myNavbar">
         <div class="brand">
+
+        <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="2360.000000pt" height="1640.000000pt" viewBox="0 0 2360.000000 1640.000000"
+            preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,1640.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"></g>
+        </svg> -->
+            
             <span>Logo</span>
         </div>
         <div class="navbar-links">
@@ -88,7 +94,7 @@
                 <a href="aboutus">Tentang Kami </a>
                 <a href="forums">Komunitas </a>
                 <a href="">Cari Lowongan </a>
-                <a href="">Profil </a>
+                <a href="profil">Profil </a>
             </b>
             <b class="topMedia">Perusahaan
                 <a href="">Profil Perusahaan </a>

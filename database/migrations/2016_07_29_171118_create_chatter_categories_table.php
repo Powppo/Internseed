@@ -17,7 +17,6 @@ class CreateChatterCategoriesTable extends Migration
             $table->timestamps();
         });
     }
-
     public function down()
     {
         Schema::drop('chatter_categories');
