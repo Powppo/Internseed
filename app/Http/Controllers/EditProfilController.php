@@ -28,5 +28,4 @@ class EditProfilController extends Controller
         return view('edit');
     }
 
-    public function show
 }

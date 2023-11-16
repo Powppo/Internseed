@@ -22,16 +22,6 @@
     margin-right: auto;
 }
 
-.navbar .brand{
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
-    color: var(--light-color);
-    font-family: var(--font);
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
 .navbar-links ul{
     display: flex;
     list-style: none;

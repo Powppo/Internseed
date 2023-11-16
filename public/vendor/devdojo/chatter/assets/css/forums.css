@@ -150,13 +150,6 @@
     align-items: center; 
   }
    /* CARD-REKOMENDASI */
-    .small-card {
-        padding: 20px;
-        border: 1px solid #000000;
-        max-width: 60%; 
-        border-radius: 10px;   
-        max-height: 98.3%;
-    }
   
     .link-underline {
       text-decoration: underline;
