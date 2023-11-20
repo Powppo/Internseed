@@ -115,7 +115,7 @@
                 <a href="aboutus">Tentang Kami </a>
                 <a href="forums">Komunitas </a>
                 <a href="">Cari Lowongan </a>
-                <a href="profil">Profil </a>
+                <a href="profil ">Profil </a>
             </b>
             <b class="topMedia">Perusahaan
                 <a href="">Profil Perusahaan </a>

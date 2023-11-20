@@ -25,8 +25,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/aboutus', [App\Http\Controllers\PageController::class, 'aboutus'])->name('aboutus');
 
 Route::get('/lihat', [App\Http\Controllers\LihatController::class, 'index']);
-Route::get('/profil', [App\Http\Controllers\PageController::class, 'profil'])->name('profil');
-Route::get('/edit', [App\Http\Controllers\PageController::class, 'edit'])->name('edit');
+Route::get('/edit', [App\Http\Controllers\PageController::class, 'profil'])->name('profil');
+Route::get('/profil', [App\Http\Controllers\PageController::class, 'edit'])->name('edit');
 
 
 Route::post('/profil/simpan', [ProfilController::class,'simpan'])->name('profil.simpan');

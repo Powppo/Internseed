@@ -7,7 +7,7 @@
 <script src="public/js/option.js"></script>
 <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="css/profil.css" type="text/css">
+<link rel="stylesheet" href="css/editprofil.css" type="text/css">
 @section('content')
 <div class="profil">
     <div class="content">
@@ -16,18 +16,25 @@
         </div>
         <div class="left-image">
             <img src="images/profil2.png" class="img-fluid" style="width: 12%;" />
+
+            
+
+            
             <!-- <div class="button-container2">
                 <a class="buttonEdit" href="edit">
                     Edit
                 </a>
             </div> -->
             <div class="button-container">
+            <!-- <p class="username-text">{{ auth()->user()->name }}</p> -->
                 <a class="buttonKeluar" href="{{ route('profil') }}">
                     Edit Profil
                 </a>
             </div>
         </div>
+        </div>
         <ul class="list-unstyled">
+
     @foreach($discussions as $discussion)
     <li style="margin: 0px 10px 15px 0px">
         <a class="discussion_list card" href="/{{ Config::get('chatter.routes.home') }}/{{ Config::get('chatter.routes.discussion') }}/{{ $discussion->category->slug }}/{{ $discussion->slug }}">
@@ -82,7 +89,7 @@
 </ul>
 
 
-        </div>
+       
     </div>
 
 @endsection

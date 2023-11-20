@@ -14,12 +14,17 @@
 <div id="chatter" class="discussion">
 	{{-- <div id="chatter_header">
 		<div class="container">
-			<a class="back_btn" href="/{{ Config::get('chatter.routes.home') }}"><i class="chatter-back"></i></a> --}}
-			{{-- <h1>{{ $discussion->title }}</h1> --}}
-
-				<span style="font-family: 'Poppins', sans-serif; color: #FFD55A; display: flex; justify-content: center; background-color: #FFFFFF; width: 200px; margin-left: auto; margin-right: auto; padding: 10px; border: 1px solid #000000; border-radius: 10px" class="chatter_head_details">Posted in<a style="padding-left: 10px; text-decoration: none; font-weight: bold; color: #000000" class="" href="/{{ Config::get('chatter.routes.home') }}/{{ Config::get('chatter.routes.category') }}/{{ $discussion->category->slug }}">{{ $discussion->category->name }}</a></span>
-
-		{{-- </div>
+			<a class="back_btn" href="/{{ Config::get('chatter.routes.home') }}"><i class="chatter-back"></i>
+			</a> 
+			--}}{{-- 
+			<h1>{{ $discussion->title }}</h1> --}}
+			<span style="font-family: 'Poppins', sans-serif; color: #FFD55A; display: flex; justify-content: center; background-color: #FFFFFF; width: 200px; margin-left: auto; margin-right: auto; padding: 10px; border: 1px solid #000000; border-radius: 10px" 
+				class="chatter_head_details">Posted in<a style="padding-left: 10px; text-decoration: none; font-weight: bold; color: #000000" 
+				class="" href="/{{ Config::get('chatter.routes.home') }}/{{ Config::get('chatter.routes.category') }}/{{ $discussion->category->slug }}">
+				{{ $discussion->category->name }}</a>
+			</span>
+			{{-- 
+		</div>
 	</div> --}}
 
 	@if(Session::has('chatter_alert'))
