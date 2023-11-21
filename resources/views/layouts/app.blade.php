@@ -45,10 +45,12 @@
         <div class="navbar-links">
             <ul>
                 <li><a class="linkhover" href="/forums">Komunitas</a></li>
-                <li><a class="linkhover" href="#">Cari Lowongan</a></li>
-                <li><a class="linkhover" href="#">Cari Pemagang</a></li>
+                <li><a class="linkhover" href="/aboutus">Tentang Kami</a></li>
+                <!-- <li><a class="linkhover" href="#">Cari Lowongan</a></li>
+                <li><a class="linkhover" href="#">Cari Pemagang</a></li> -->
             </ul>
         </div>
+        
         <div class="navbar-auth">
             <ul>
                 @guest
@@ -114,12 +116,12 @@
             <b class="topMedia">Layanan
                 <a href="aboutus">Tentang Kami </a>
                 <a href="forums">Komunitas </a>
-                <a href="">Cari Lowongan </a>
-                <a href="profil ">Profil </a>
+                <!-- <a href="">Cari Lowongan </a>
+                <a href="profil ">Profil </a> -->
             </b>
             <b class="topMedia">Perusahaan
                 <a href="">Profil Perusahaan </a>
-                <a href="">Cari Pemagang</a>
+                <!-- <a href="">Cari Pemagang</a> -->
             </b>
             <b class="topMedia">Sosial Media
                 <div>

@@ -17,14 +17,7 @@
         <div class="left-image">
             <img src="images/profil2.png" class="img-fluid" style="width: 12%;" />
 
-            
 
-            
-            <!-- <div class="button-container2">
-                <a class="buttonEdit" href="edit">
-                    Edit
-                </a>
-            </div> -->
             <div class="button-container">
             <!-- <p class="username-text">{{ auth()->user()->name }}</p> -->
                 <a class="buttonKeluar" href="{{ route('profil') }}">
