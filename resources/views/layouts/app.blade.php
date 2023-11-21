@@ -116,13 +116,13 @@
             <b class="topMedia">Layanan
                 <a href="aboutus">Tentang Kami </a>
                 <a href="forums">Komunitas </a>
-                <!-- <a href="">Cari Lowongan </a>
-                <a href="profil ">Profil </a> -->
+                <!-- <a href="">Cari Lowongan </a> -->
+                <a href="profil ">Profil </a>
             </b>
-            <b class="topMedia">Perusahaan
+            <!-- <b class="topMedia">Perusahaan
                 <a href="">Profil Perusahaan </a>
-                <!-- <a href="">Cari Pemagang</a> -->
-            </b>
+                <a href="">Cari Pemagang</a>
+            </b> -->
             <b class="topMedia">Sosial Media
                 <div>
                     <img src="vendor/devdojo/chatter/assets/images/iconInstagram.png" alt="">
