@@ -32,6 +32,10 @@ Route::get('/profil', [App\Http\Controllers\PageController::class, 'edit'])->nam
 Route::post('/profil/simpan', [ProfilController::class,'simpan'])->name('profil.simpan');
 Route::get('/profil/keluar', [ProfilController::class,'keluar'])->name('profil.keluar');
 
+// routes/web.php
+
+   Route::post('/profil/unggah-gambar', [ProfilController::class, 'unggahGambar'])->name('profil.unggah-gambar');
+
 
 
 

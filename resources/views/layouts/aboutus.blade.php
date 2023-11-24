@@ -32,16 +32,8 @@
                 <img src="images/iconLinkedin.png" alt="linkedin">
             </div>
         </div>
+
         <div class="timconts2">
-            <div class="timconts" id="timconts">
-                <img class="blank" src="images/blank.png" alt="profile">
-                <h1>Person </h1>
-                <h2>Leader </h2>
-                <div class="icon">
-                    <img src="images/iconEmail.png" alt="email">
-                    <img src="images/iconLinkedin.png" alt="linkedin">
-                </div>
-            </div>
             <div class="timconts" id="timconts">
                 <img class="blank" src="images/blank.png" alt="profile">
                 <h1>Person </h1>
@@ -62,15 +54,6 @@
             </div>
         </div>
         <div class="timconts2">
-            <div class="timconts" id="timconts">
-                <img class="blank" src="images/blank.png" alt="profile">
-                <h1>Person </h1>
-                <h2>Leader </h2>
-                <div class="icon">
-                    <img src="images/iconEmail.png" alt="email">
-                    <img src="images/iconLinkedin.png" alt="linkedin">
-                </div>
-            </div>
             <div class="timconts" id="timconts">
                 <img class="blank" src="images/blank.png" alt="profile">
                 <h1>Person </h1>

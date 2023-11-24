@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProfilController extends Controller
 {
@@ -68,4 +69,31 @@ class ProfilController extends Controller
     public function keluar(Request $request){
         return redirect('/login')->with('success', 'Anda Berhasil Keluar');
     }
+
+    public function unggahGambar(Request $request)
+    {
+        $request->validate([
+            'gambar_profil' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $gambarProfil = $request->file('gambar_profil');
+
+        // Simpan gambar dengan nama yang unik
+        $path = $gambarProfil->storeAs('public/gambar_profil', uniqid() . '.' . $gambarProfil->getClientOriginalExtension());
+
+        // Hapus gambar lama jika ada
+        if (auth()->user()->foto_profil) {
+            Storage::delete(auth()->user()->foto_profil);
+        }
+
+        // Update path gambar pengguna di database
+        auth()->user()->update([
+            'foto_profil' => $path,
+        ]);
+
+        return redirect()->route('profil.index')->with('success', 'Gambar profil berhasil diunggah.');
+    }
+
+    
+
 }

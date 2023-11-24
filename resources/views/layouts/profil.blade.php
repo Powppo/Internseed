@@ -16,7 +16,21 @@
             <img src="images/profil.png" class="img-fluid" style="width: 80%;" />
         </div>
         <div class="left-image">
-            <img src="images/profil2.png" class="img-fluid" style="width: 12%;" />
+            <!-- <img src="images/profil2.png" class="img-fluid" style="width: 12%;" /> -->
+            <form action="{{ route('profil.unggah-gambar') }}" method="post" 
+            enctype="multipart/form-data" id="formUnggahGambar">
+        @csrf
+        <label for="inputUnggahGambar">
+            <img src="{{ asset(auth()->user()->foto_profil ?? 'images/profil2.png') }}" 
+            class="img-fluid" style="width: 100%;" id="gambarProfil" />
+            <div id="ikonKamera" class="ikon-kamera">
+                <i class="fas fa-camera"></i>
+            </div>
+        </label>
+        <input type="file" name="gambar_profil" accept="image/*" style="display: none;" id="inputUnggahGambar">
+        <button type="submit" id="btnUnggahGambar" style="display: none;">Unggah Gambar</button>
+    </form>
+
             <!-- <div class="button-container2">
                 <a class="buttonEdit" href="edit">
                     Edit

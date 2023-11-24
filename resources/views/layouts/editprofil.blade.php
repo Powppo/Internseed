@@ -14,19 +14,14 @@
         <div class="right-image">
             <img src="images/profil.png" class="img-fluid" style="width: 80%;" />
         </div>
-        <div class="left-image">
-            <img src="images/profil2.png" class="img-fluid" style="width: 12%;" />
 
-            
-
-            
-            <!-- <div class="button-container2">
-                <a class="buttonEdit" href="edit">
-                    Edit
-                </a>
-            </div> -->
+            <div class="left-image">
+            <div class="text-img">           
+                 <img src="images/profil2.png" class="img-fluid" style="width: 12%;" />
+                
+                <h3>{{ old('name', auth()->user() ? auth()->user()->name : '') }}</h3>
+                </div>
             <div class="button-container">
-            <!-- <p class="username-text">{{ auth()->user()->name }}</p> -->
                 <a class="buttonKeluar" href="{{ route('profil') }}">
                     Edit Profil
                 </a>
@@ -36,6 +31,7 @@
         <ul class="list-unstyled">
 
     @foreach($discussions as $discussion)
+    @if(auth()->check() && $discussion->user_id == auth()->user()->id)
     <li style="margin: 0px 10px 15px 0px">
         <a class="discussion_list card" href="/{{ Config::get('chatter.routes.home') }}/{{ Config::get('chatter.routes.discussion') }}/{{ $discussion->category->slug }}/{{ $discussion->slug }}">
             <div class="card-body">
@@ -73,7 +69,6 @@
                         @if(strlen(strip_tags($discussionBody)) > 200){{ '...' }}@endif
                     </p>
                 </div>
-
                 <div class="chatter_right">
                     <div class="chatter_count">
                         <img style="width: 25px; height: 25px;" src="images/iconComment.png" alt="">
@@ -83,13 +78,11 @@
                     </div>
                 </div>
             </div>
-        </a>c
+        </a>
     </li>
+    @endif
     @endforeach
-</ul>
-
-
-       
+</ul>    
     </div>
 
 @endsection

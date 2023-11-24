@@ -50,6 +50,21 @@
     transform: translateY(-40%); 
     text-align: left; 
 }
+.text-img{
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-img h3 {
+    margin-top: 90px; /* Sesuaikan nilai ini sesuai kebutuhan Anda */
+    margin-left: 20px;
+    color: #FFD55A;
+    font-weight: bold;
+    font-size: 25px;
+
+
+}
+
 
 .button-container {
     display: flex;
@@ -104,6 +119,9 @@ Label{
     margin: 0 auto; 
     width: 50%; 
 }
+.p {
+    color: black;
+}
 
 @media  screen and (max-width: 768px) {
     .profil {
@@ -137,7 +155,3 @@ Label{
         margin-top: 7px; /* Sesuaikan margin atas sesuai dengan kebutuhan Anda */
     }
 }
-
-
-
-

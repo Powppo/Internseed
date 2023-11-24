@@ -45,8 +45,9 @@
         <div class="navbar-links">
             <ul>
                 <li><a class="linkhover" href="/forums">Komunitas</a></li>
-                <li><a class="linkhover" href="#">Cari Lowongan</a></li>
-                <li><a class="linkhover" href="#">Cari Pemagang</a></li>
+                <li><a class="linkhover" href="/aboutus">Tentang Kami</a></li>
+                <!-- <li><a class="linkhover" href="#">Cari Lowongan</a></li> -->
+                <!-- <li><a class="linkhover" href="#">Cari Pemagang</a></li> -->
             </ul>
         </div>
         <div class="navbar-auth">
