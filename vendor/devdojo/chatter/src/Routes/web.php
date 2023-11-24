@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Helpers.
  */
@@ -215,3 +216,10 @@ Route::get($route('home').'.atom', [
     'uses'       => 'DevDojo\Chatter\Controllers\ChatterAtomController@index',
     'middleware' => $middleware('home'),
 ]);
+
+
+
+
+
+
+

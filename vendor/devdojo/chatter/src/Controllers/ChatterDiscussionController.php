@@ -58,12 +58,11 @@ class ChatterDiscussionController extends Controller
         $request->request->add(['body_content' => strip_tags($request->body)]);
 
         $validator = Validator::make($request->all(), [
-            'title'               => 'required|min:5|max:255',
-            'body_content'        => 'required|min:10',
+            'body_content'        => 'required|min:0',
             'chatter_category_id' => 'required',
         ]);
 
-        Event::fire(new ChatterBeforeNewDiscussion($request, $validator));
+        Event::dispatch(new ChatterBeforeNewDiscussion($request, $validator));
         if (function_exists('chatter_before_new_discussion')) {
             chatter_before_new_discussion($request, $validator);
         }
@@ -133,7 +132,7 @@ class ChatterDiscussionController extends Controller
         $post = Models::post()->create($new_post);
 
         if ($post->id) {
-            Event::fire(new ChatterAfterNewDiscussion($request));
+            Event::dispatch(new ChatterAfterNewDiscussion($request));
             if (function_exists('chatter_after_new_discussion')) {
                 chatter_after_new_discussion($request);
             }
@@ -285,4 +284,4 @@ class ChatterDiscussionController extends Controller
             return response()->json(1);
         }
     }
-}
+} 
