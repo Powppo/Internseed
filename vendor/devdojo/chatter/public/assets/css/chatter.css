@@ -3,7 +3,7 @@
   margin-bottom: 0px;
 }
 body {
-  background: #FFFFFF;
+  background: #fff;
 }
 #chatter {
   padding-bottom: 30px;
@@ -69,9 +69,7 @@ body {
   margin-bottom: 0px;
 }
 #chatter .chatter_container {
-  display: flex;
   margin-top: 40px;
-  padding-left: 0%;
 }
 #chatter #title.form-control {
   height: 48px;
@@ -84,7 +82,16 @@ body {
 }
 #chatter #new_discussion {
   display: none;
+  border: 2px solid #0098cb;
+  border-bottom: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 750px;
+  margin-left: -375px;
+  left: 50%;
   height: auto;
+  background: #fff;
+  z-index: 9999;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   overflow: hidden;
@@ -257,18 +264,15 @@ body {
   left: 10px;
 }
 #chatter .chatter_avatar span.chatter_avatar_circle {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   line-height: 62px;
   text-align: center;
   background: #263238;
   display: inline-block;
   border-radius: 30px;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 #chatter .chatter_avatar img {
   width: 60px;
@@ -277,22 +281,20 @@ body {
 }
 #chatter ul.discussions {
   list-style: none;
-  margin: 0;
-  padding-left: 0px;
-  /* background: #ffffff; */
+  margin: 0px;
+  padding: 0px;
+  background: #fff;
 }
 #chatter ul.discussions.no-bg {
   background: none;
 }
 #chatter ul.discussions li a.discussion_list,
 #chatter ul.discussions li .chatter_posts {
-  border: 1px solid #000000;
-  border-radius: 3px;
-  width: 100%;
-  background: #FFFFFF;
-  padding: 20px;
+  background: #ffffff;
+  padding: 15px;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
+  border-top: 1px solid #f1fcff;
   text-decoration: none;
   display: block;
   position: relative;
@@ -335,12 +337,15 @@ body {
 }
 #chatter ul.discussions li a.discussion_list .chatter_post_actions p,
 #chatter ul.discussions li .chatter_posts .chatter_post_actions p {
+  margin: 0px;
   float: right;
-  background: transparent;
-  border-radius: 5px;
-  font-size: 10px;
+  background: #f1fcff;
+  border-radius: 10px;
+  font-size: 12px;
   cursor: pointer;
-  padding-right: 7px;
+  padding: 3px 10px;
+  margin-right: 10px;
+  color: #B1BcBf;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
@@ -356,7 +361,8 @@ body {
 #chatter ul.discussions li a.discussion_list .chatter_middle,
 #chatter ul.discussions li .chatter_posts .chatter_middle {
   float: left;
-
+  margin-left: 80px;
+  margin-right: 90px;
 }
 #chatter ul.discussions li a.discussion_list .chatter_middle h3.chatter_middle_title,
 #chatter ul.discussions li .chatter_posts .chatter_middle h3.chatter_middle_title {
@@ -408,18 +414,21 @@ body {
 }
 #chatter ul.discussions li a.discussion_list .chatter_right,
 #chatter ul.discussions li .chatter_posts .chatter_right {
-  margin-top: 100px;
-
+  float: right;
+  right: 25px;
+  text-align: right;
+  position: absolute;
 }
 #chatter ul.discussions li a.discussion_list .chatter_right .chatter_count,
 #chatter ul.discussions li .chatter_posts .chatter_right .chatter_count {
+  padding: 8px 20px;
   border-radius: 3px;
   margin-top: 10px;
   font-size: 20px;
   color: #9DADB4;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Helvetica, Times, Courier;
 }
 #chatter ul.discussions li a.discussion_list .chatter_right .chatter_count i,
 #chatter ul.discussions li .chatter_posts .chatter_right .chatter_count i {
@@ -656,7 +665,9 @@ body {
 #chatter.discussion #submit_response {
   margin-top: 20px;
 }
-
+#chatter #pagination {
+  text-align: center;
+}
 #chatter .chatter_loader_container {
   background: #fff;
   border-radius: 3px;
@@ -1072,6 +1083,31 @@ div.mce-edit-area {
   border-radius: 50%;
 }
 /********** End Toggle Switch CSS **********/
-
+#pagination {
+  font-size: 18px;
+}
+#pagination .pagination > .active > span {
+  background: none;
+  color: #333;
+  font-weight: bold;
+  border: 0px;
+}
+#pagination .pagination > .disabled > span {
+  border: 0px;
+  color: #ccc;
+}
+#pagination .pagination > li > a,
+#pagination .pagination > li > span {
+  border: 0px;
+  padding: 6px 5px;
+  color: #777;
+}
+#pagination .pagination > li > a:focus,
+#pagination .pagination > li > a:hover,
+#pagination .pagination > li > span:focus,
+#pagination .pagination > li > span:hover {
+  background: none;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=chatter.css.map */

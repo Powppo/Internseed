@@ -46,10 +46,13 @@
             <ul>
                 <li><a class="linkhover" href="/forums">Komunitas</a></li>
                 <li><a class="linkhover" href="/aboutus">Tentang Kami</a></li>
-                <!-- <li><a class="linkhover" href="#">Cari Lowongan</a></li> -->
-                <!-- <li><a class="linkhover" href="#">Cari Pemagang</a></li> -->
+=======
+                <!-- <li><a class="linkhover" href="#">Cari Lowongan</a></li>
+                <li><a class="linkhover" href="#">Cari Pemagang</a></li> -->
+>>>>>>> 56f8ccb8b5b796f4c215a79e09b42292e42ed264
             </ul>
         </div>
+        
         <div class="navbar-auth">
             <ul>
                 @guest

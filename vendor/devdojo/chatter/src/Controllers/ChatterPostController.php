@@ -50,7 +50,7 @@ class ChatterPostController extends Controller
             'body' => 'required|min:10',
         ]);
 
-        Event::dispatch(new ChatterBeforeNewResponse($request, $validator));
+        Event::fire(new ChatterBeforeNewResponse($request, $validator));
         if (function_exists('chatter_before_new_response')) {
             chatter_before_new_response($request, $validator);
         }
@@ -87,7 +87,7 @@ class ChatterPostController extends Controller
         }
 
         if ($new_post->id) {
-            Event::dispatch(new ChatterAfterNewResponse($request));
+            Event::fire(new ChatterAfterNewResponse($request));
             if (function_exists('chatter_after_new_response')) {
                 chatter_after_new_response($request);
             }

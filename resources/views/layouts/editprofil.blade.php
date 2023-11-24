@@ -29,7 +29,6 @@
         </div>
         </div>
         <ul class="list-unstyled">
-
     @foreach($discussions as $discussion)
     @if(auth()->check() && $discussion->user_id == auth()->user()->id)
     <li style="margin: 0px 10px 15px 0px">
@@ -84,5 +83,4 @@
     @endforeach
 </ul>    
     </div>
-
 @endsection

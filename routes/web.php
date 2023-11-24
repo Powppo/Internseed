@@ -40,8 +40,6 @@ Route::get('/profil/keluar', [ProfilController::class,'keluar'])->name('profil.k
 
 
 
-/*Google Sign in Route*/
+// /Google Sign in Route/
 Route::get('/auth/redirect', [App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider']);
 Route::get('/auth/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
-
-
