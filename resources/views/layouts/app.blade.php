@@ -27,8 +27,8 @@
 <body id="app-layout">
     <nav class="navbar" id="myNavbar">
         <div class="brand">
-            <a href="/forums">
-                <button href="/forums" style="background: none; border: none;">
+            <a href="/home">
+                <button href="/home" style="background: none; border: none;">
                     <svg style="" width="50" height="50" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <path d="M89.6389 44.8194C89.6389 69.5725 69.5725 89.6389 44.8194 89.6389C20.0663 89.6389 0 69.5725 0 44.8194C0 20.0663 20.0663 0 44.8194 0C69.5725 0 89.6389 20.0663 89.6389 44.8194Z" fill="#323232"/>
                         <rect x="21" y="11" width="53" height="68" fill="url(#pattern0)"/>
@@ -44,12 +44,10 @@
         </div>
         <div class="navbar-links">
             <ul>
-                <li><a class="linkhover" href="/forums">Komunitas</a></li>
+                <li><a class="linkhover" href="/home">Komunitas</a></li>
                 <li><a class="linkhover" href="/aboutus">Tentang Kami</a></li>
-=======
                 <!-- <li><a class="linkhover" href="#">Cari Lowongan</a></li>
                 <li><a class="linkhover" href="#">Cari Pemagang</a></li> -->
->>>>>>> 56f8ccb8b5b796f4c215a79e09b42292e42ed264
             </ul>
         </div>
         
