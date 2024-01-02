@@ -79,7 +79,7 @@
             <!-- END SIDEBAR -->
             <div class="col-md-12 right-column" style="display: flex; margin: auto">
                 <div class="panel">
-                    <ul class="discussions" style="width: 100%">
+                    <ul class="discussions" style="width: 800px">
                         {{-- New Discussion Form --}}
                         <div id="new_discussion" >
                             <div class="chatter_loader dark" id="new_discussion_loader">

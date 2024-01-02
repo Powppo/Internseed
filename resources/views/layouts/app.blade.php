@@ -51,6 +51,25 @@
             </ul>
         </div>
         
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>  
+
+        <a href="/profil">
+            <i class="fa-solid fa-user" style="color: #ffd55a;" ></i>
+        </a>
+        
         <div class="navbar-auth">
             <ul>
                 @guest
@@ -93,6 +112,7 @@
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 <footer>
     <div class="containerx">
         <div class="flex-box">
@@ -113,7 +133,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur. Leo orci leo leo et ac egestas scelerisque. 
                     Magna elementum id dictum id. Vestibulum quam tellus purus risus eget.</p>
             </div>
-            <b class="topMedia">Layanan
+            <b class="topMedia" >Layanan
                 <a href="aboutus">Tentang Kami </a>
                 <a href="forums">Komunitas </a>
                 <a href="">Cari Lowongan </a>

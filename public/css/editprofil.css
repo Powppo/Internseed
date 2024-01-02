@@ -109,6 +109,21 @@
     margin-top: -50px;
     text-align: center;
 }
+.buttonPostBaru {
+    background-color: #fff; 
+    color: #FFD55A; 
+    font-size: 18px;
+    padding: 15px 20px; /* Menyesuaikan padding untuk membuat tombol lebih besar */
+    border: solid #FFD55A;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 15%; /* Menyesuaikan lebar tombol */
+    margin-right: 130px;
+    margin-bottom: 100%;
+    text-align: center;
+}
+
+
 
 Label{
     text-align: left;

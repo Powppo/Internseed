@@ -27,11 +27,23 @@
                 </a>
             </div>
         </div>
+        
+        <div class="text-post">
+            <a class="buttonPostBaru" href="{{ route('home') }}">
+                Buat Postingan Terbaru Anda
+            </a>
         </div>
+
+        <div>
+            <br> <br> <br>
+        </div>
+    
+    </div>
+        
         <ul class="list-unstyled">
     @foreach($discussions as $discussion)
     @if(auth()->check() && $discussion->user_id == auth()->user()->id)
-    <li style="margin: 0px 10px 15px 0px">
+    <li style="margin: 0px 10px 15px 0px; width: 800px" >
         <a class="discussion_list card" href="/{{ Config::get('chatter.routes.home') }}/{{ Config::get('chatter.routes.discussion') }}/{{ $discussion->category->slug }}/{{ $discussion->slug }}">
             <div class="card-body">
                 <div class="chatter_avatar" style="display: flex; align-items: center">
@@ -43,7 +55,7 @@
                             <img src="{{ Config::get('chatter.user.relative_url_to_image_assets') . $discussion->user->{$dbField} }}">
                         @endif
                     @else
-                        <span class="chatter_avatar_circle" style="background-color:#x{{ \DevDojo\Chatter\Helpers\ChatterHelper::stringToColorCode($discussion->user->email) }}">
+                        <span class="chatter_avatar_circle" style="background-color:#x{{ \DevDojo\Chatter\Helpers\ChatterHelper::stringToColorCode($discussion->user->email) }}" >
                             {{ strtoupper(substr($discussion->user->email, 0, 1)) }}
                         </span>
                     @endif
@@ -81,6 +93,9 @@
     </li>
     @endif
     @endforeach
+    <div id="pagination">
+                        {{ $discussions->links('pagination::bootstrap-4') }}
+                    </div>
 </ul>    
     </div>
 @endsection

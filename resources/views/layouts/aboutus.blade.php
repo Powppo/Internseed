@@ -25,7 +25,7 @@
         <div class="aboutus"><span>Tim </span></div>
         <div class="timconts" id="timconts">
             <img class="blank" src="images/blank.png" alt="profile">
-            <h1>Person </h1>
+            <h1>Pak fadly </h1>
             <h2>Leader </h2>
             <div class="icon">
                 <img src="images/iconEmail.png" alt="email">
@@ -36,8 +36,8 @@
         <div class="timconts2">
             <div class="timconts" id="timconts">
                 <img class="blank" src="images/blank.png" alt="profile">
-                <h1>Person </h1>
-                <h2>Leader </h2>
+                <h1>Safira </h1>
+                <h2>Mahasiswa </h2>
                 <div class="icon">
                     <img src="images/iconEmail.png" alt="email">
                     <img src="images/iconLinkedin.png" alt="linkedin">
@@ -45,8 +45,8 @@
             </div>
             <div class="timconts" id="timconts">
                 <img class="blank" src="images/blank.png" alt="profile">
-                <h1>Person </h1>
-                <h2>Leader </h2>
+                <h1>Rofiqoh </h1>
+                <h2>Mahasiswa </h2>
                 <div class="icon">
                     <img src="images/iconEmail.png" alt="email">
                     <img src="images/iconLinkedin.png" alt="linkedin">
@@ -56,8 +56,8 @@
         <div class="timconts2">
             <div class="timconts" id="timconts">
                 <img class="blank" src="images/blank.png" alt="profile">
-                <h1>Person </h1>
-                <h2>Leader </h2>
+                <h1>Nadhifah </h1>
+                <h2>Mahasiswa </h2>
                 <div class="icon">
                     <img src="images/iconEmail.png" alt="email">
                     <img src="images/iconLinkedin.png" alt="linkedin">
@@ -65,8 +65,8 @@
             </div>
             <div class="timconts" id="timconts">
                 <img class="blank" src="images/blank.png" alt="profile">
-                <h1>Person </h1>
-                <h2>Leader </h2>
+                <h1>Afrizal </h1>
+                <h2>Mahasiswa </h2>
                 <div class="icon">
                     <img src="images/iconEmail.png" alt="email">
                     <img src="images/iconLinkedin.png" alt="linkedin">
@@ -79,7 +79,7 @@
             <img src="images/blank2.png" alt="">
             <div class="mapDesc">
                 <span>Malang </span>
-                <span class="add">PT Blablabla, Jl. Blablabla </span>
+                <span class="add">PT Bee Happy Translation service </span>
                 <span>Tel: 021-8082 5888 </span>
                 <span>Fax: 021-57957711 / 021-57957722 </span>
                 <span>Email: ads-id@jobstreet.com </span>
